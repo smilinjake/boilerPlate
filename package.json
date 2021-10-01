@@ -4,7 +4,9 @@
   "description": "boilerplate",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --mode=development --open --hot",
+    "build": "webpack --mode=production"
   },
   "author": "JacobWard",
   "license": "ISC",
@@ -25,9 +27,5 @@
     "webpack": "^5.55.1",
     "webpack-cli": "^4.8.0",
     "webpack-dev-server": "^4.3.0"
-  },
-  "presets": [
-    "@babel/preset-env",
-    "@babel/preset-react"
-  ]
+  }
 }
